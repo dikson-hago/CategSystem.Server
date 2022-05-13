@@ -1,0 +1,12 @@
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.csproj.AssemblyReference.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.AssemblyInfoInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.AssemblyInfo.cs
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\bin\Debug\net6.0\MlServer.Learners.deps.json
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\bin\Debug\net6.0\MlServer.Learners.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\bin\Debug\net6.0\ref\MlServer.Learners.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\bin\Debug\net6.0\MlServer.Learners.pdb
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\ref\MlServer.Learners.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Learners\obj\Debug\net6.0\MlServer.Learners.pdb

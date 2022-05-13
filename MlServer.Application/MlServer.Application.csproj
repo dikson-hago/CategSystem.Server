@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Data\issues_test.tsv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\issues_train.tsv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Data\issues_train_easy.tsv">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\MlServer.Database\MlServer.Database.csproj" />
+      <ProjectReference Include="..\MlServer.Learners\MlServer.Learners.csproj" />
+      <ProjectReference Include="..\MlServer.Orchestrator.Learners\MlServer.Orchestrator.Learners.csproj" />
+    </ItemGroup>
+
+</Project>

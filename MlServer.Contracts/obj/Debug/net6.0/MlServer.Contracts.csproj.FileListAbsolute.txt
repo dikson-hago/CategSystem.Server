@@ -1,0 +1,12 @@
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\bin\Debug\net6.0\MlServer.Contracts.deps.json
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\bin\Debug\net6.0\MlServer.Contracts.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\bin\Debug\net6.0\ref\MlServer.Contracts.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\bin\Debug\net6.0\MlServer.Contracts.pdb
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.csproj.AssemblyReference.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.AssemblyInfoInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.AssemblyInfo.cs
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\ref\MlServer.Contracts.dll
+C:\Users\User\Documents\учеба\CourseWork\MlServer\MlServer.Contracts\obj\Debug\net6.0\MlServer.Contracts.pdb

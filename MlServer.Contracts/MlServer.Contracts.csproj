@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Dto\**" />
+      <Compile Remove="DbModels\**" />
+      <Compile Remove="Mapper.cs" />
+      <Compile Remove="ModelPropertiesContext.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Dto\**" />
+      <EmbeddedResource Remove="DbModels\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Dto\**" />
+      <None Remove="DbModels\**" />
+    </ItemGroup>
+
+</Project>

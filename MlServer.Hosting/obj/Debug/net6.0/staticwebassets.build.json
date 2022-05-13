@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6drDZQAUFyFP+U4pLZOJcSLc978bMD+43J90iscDxL8=",
+  "Source": "MlServer.Hosting",
+  "BasePath": "_content/MlServer.Hosting",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
