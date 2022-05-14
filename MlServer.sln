@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.Hosting", "MlServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.Application", "MlServer.Application\MlServer.Application.csproj", "{606E7CD5-909C-4812-9B0B-24F1C5BCFC2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.ConsoleApp", "MlServer.ConsoleApp\MlServer.ConsoleApp.csproj", "{8B555AE6-0312-4436-8D65-79F6F4D4E484}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.Learners", "MlServer.Learners\MlServer.Learners.csproj", "{8C4D7D31-6FCC-4978-BBA6-5614B37D48E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.Database", "MlServer.Database\MlServer.Database.csproj", "{C6EB1493-5C6F-4786-9432-A039EB27B2D8}"
@@ -30,10 +28,6 @@ Global
 		{606E7CD5-909C-4812-9B0B-24F1C5BCFC2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606E7CD5-909C-4812-9B0B-24F1C5BCFC2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{606E7CD5-909C-4812-9B0B-24F1C5BCFC2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B555AE6-0312-4436-8D65-79F6F4D4E484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B555AE6-0312-4436-8D65-79F6F4D4E484}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B555AE6-0312-4436-8D65-79F6F4D4E484}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B555AE6-0312-4436-8D65-79F6F4D4E484}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8C4D7D31-6FCC-4978-BBA6-5614B37D48E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8C4D7D31-6FCC-4978-BBA6-5614B37D48E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C4D7D31-6FCC-4978-BBA6-5614B37D48E6}.Release|Any CPU.ActiveCfg = Release|Any CPU

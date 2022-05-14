@@ -12,7 +12,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\MlServer.Application\MlServer.Application.csproj" />
-      <ProjectReference Include="..\MlServer.Proto\MlServer.Proto.csproj" />
     </ItemGroup>
 
     <ItemGroup>
