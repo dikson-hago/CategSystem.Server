@@ -1,4 +1,4 @@
-﻿namespace MlServer.Application.Handlers.Errors;
+﻿namespace MlServer.Application.Errors;
 
 public class ErrorsInCurrentSession
 {

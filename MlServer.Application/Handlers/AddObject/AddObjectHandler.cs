@@ -1,6 +1,5 @@
-﻿using System.Text.Json;
-using MlServer.Application.Handlers.Errors;
-using MlServer.Contracts.Models;
+﻿using MlServer.Application.Errors;
+using MlServer.Contracts.Errors;
 using MlServer.Database.Repository;
 using MlServer.Orchestrator.Learners;
 using ContractDbModel = MlServer.Contracts.Models.Db;

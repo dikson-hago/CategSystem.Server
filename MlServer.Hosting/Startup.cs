@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MlServer.Database;
-using MlServer.Hosting.Services;
+﻿using MlServer.Hosting.Services;
 using MlServer.Services.Extensions;
 
 namespace MlServer.Hosting {

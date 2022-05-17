@@ -3,7 +3,7 @@ using MlServer.Database.Repository;
 using ContractDb = MlServer.Contracts.Models.Db;
 
 
-namespace MlServer.Application.Handlers.Handlers.DownloadTable;
+namespace MlServer.Application.Handlers;
 
 public class DownloadTableHandler : ObjectsInfosRepositoryBaseHandler
 {

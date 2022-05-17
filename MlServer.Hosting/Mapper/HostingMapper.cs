@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using MlServer.Contracts.Models;
+using MlServer.Contracts.Errors;
 using MlServer.Contracts.Models.TablesStatuses;
 using MlServer.Proto;
 
@@ -52,7 +52,7 @@ public static class HostingMapper
             int index = 0;
             foreach (var prop in objectForPrediction.GetType().GetProperties())
             {
-                if (prop.Name.Contains("Sign"))
+                if (prop.Name.Contains("Sign") && index < signs.Count)
                 {
                     prop.SetValue(objectForPrediction, signs[index]);
                     index++;
@@ -109,7 +109,7 @@ public static class HostingMapper
             model.TableName = tableInfo.TableName;
             model.CategoryColumnName = tableInfo.CategoryColumnName;
             model.ColumnNames.AddRange(columnNames);
-            
+
             result.TableInfo.Add(model);
         }
 

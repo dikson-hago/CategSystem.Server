@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
-using MlServer.Application.Handlers.Errors;
-using MlServer.Application.Handlers.Mapper;
+using MlServer.Application.Errors;
+using MlServer.Database.Repository;
 using MlServer.Orchestrator.Learners.Distriburtors;
 
 using ContractML = MlServer.Contracts.Models.ML;
@@ -11,14 +11,18 @@ namespace MlServer.Application.Handlers;
 public class PredictCategoryHandler
 {
     private readonly PredictObjectDistributor _distributor;
+    private readonly TableInfosRepository _repository;
     private ErrorsInCurrentSession _errors;
 
     
     public PredictCategoryHandler(
         PredictObjectDistributor distributor,
-        ErrorsInCurrentSession errors)
+        ErrorsInCurrentSession errors,
+        TableInfosRepository repository)
     {
         _distributor = distributor;
+        _errors = errors;
+        _repository = repository;
     }
 
     public async Task<(List<ContractDb.ObjectInfo>, List<string>)> Handle(
@@ -31,13 +35,18 @@ public class PredictCategoryHandler
             var predictions = await
                 _distributor.Predict(objectInfos, tableName);
 
+            var currentTableColumnsAmount = await _repository.GetColumnsAmount(tableName);
+
             for (int ind = 0; ind < predictions.Count; ind++)
             {
+                var columns = objectInfos[ind].MapToList();
+                columns = columns.GetRange(0, Convert.ToInt32(currentTableColumnsAmount));
+                
                 result.Add(new ContractDb.ObjectInfo()
                 {
                     Category = predictions[ind],
                     TableName = tableName,
-                    SignsInJson = JsonSerializer.Serialize(objectInfos[ind].MapToList())
+                    SignsInJson = JsonSerializer.Serialize(columns)
                 });
             }
         }

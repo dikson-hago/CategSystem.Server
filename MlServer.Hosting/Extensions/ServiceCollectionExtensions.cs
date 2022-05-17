@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MlServer.Application.Handlers;
 using MlServer.Database;
 using MlServer.Hosting.BackgroundServices;
 

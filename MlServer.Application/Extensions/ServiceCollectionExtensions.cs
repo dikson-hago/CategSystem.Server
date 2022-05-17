@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using MlServer.Application.Errors;
 using MlServer.Application.Handlers;
-using MlServer.Application.Handlers.Errors;
-using MlServer.Application.Handlers.Handlers.DownloadTable;
-using MlServer.Application.Handlers.Handlers.GetAllTablesInfos;
-using MlServer.Application.Handlers.Handlers.GetTablesStatuses;
 using MlServer.Orchestrator.Learners.Extensions;
 
 namespace MlServer.Services.Extensions

@@ -1,7 +1,4 @@
-﻿using MlServer.Application.Handlers.Handlers.DownloadTable;
-using MlServer.Application.Handlers.Handlers.GetAllTablesInfos;
-using MlServer.Application.Handlers.Handlers.GetTablesStatuses;
-using MlServer.Contracts.Models;
+﻿using MlServer.Contracts.Errors;
 using MlServer.Contracts.Models.TablesStatuses;
 using ContractMl = MlServer.Contracts.Models.ML;
 using ContractDb = MlServer.Contracts.Models.Db;

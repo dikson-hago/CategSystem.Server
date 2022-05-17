@@ -1,5 +1,5 @@
-﻿using MlServer.Application.Handlers.Errors;
-using MlServer.Contracts.Models;
+﻿using MlServer.Application.Errors;
+using MlServer.Contracts.Errors;
 using MlServer.Database.Repository;
 using MlServer.Orchestrator.Learners.Distriburtors;
 using ContractDb = MlServer.Contracts.Models.Db;

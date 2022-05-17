@@ -1,5 +1,4 @@
-﻿using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MlServer.Database.Models;
 
 using ContractDb = MlServer.Contracts.Models.Db;
@@ -67,29 +66,16 @@ public class TableInfosRepository
         return result;
     }
 
-    public async Task<List<string>> GetTableColumnNames(string tableName)
+    public async Task<long> GetColumnsAmount(string tableName)
     {
         var result = await _dbContext.TablesInfosTable
-            .FirstOrDefaultAsync(table => table.TableName.Equals(tableName))!;
-        
+            .FirstOrDefaultAsync(item => item.TableName.Equals(tableName));
+
         if (result is null)
         {
             throw new Exception("Current table doesn't exist");
         }
-        
-        var columnNames = JsonSerializer.Deserialize<List<string>>(result.ColumnNames);
 
-        if (columnNames is null)
-        {
-            throw new Exception("Current table doesn't contains columnNames ");
-        }
-
-        var headers = new List<string>();
-        
-        headers.Add(result.CategoryColumnName);
-        
-        headers.AddRange(columnNames);
-
-        return headers;
+        return result.ColumnsAmount;
     }
 }

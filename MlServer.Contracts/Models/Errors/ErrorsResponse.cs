@@ -1,4 +1,4 @@
-﻿namespace MlServer.Contracts.Models;
+﻿namespace MlServer.Contracts.Errors;
 
 public class ErrorsResponse
 {

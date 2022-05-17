@@ -1,7 +1,7 @@
 ﻿using MlServer.Contracts.Models.TablesStatuses;
 using MlServer.Orchestrator.Learners;
 
-namespace MlServer.Application.Handlers.Handlers.GetTablesStatuses;
+namespace MlServer.Application.Handlers;
 
 public class GetTablesStatusesHandler
 {

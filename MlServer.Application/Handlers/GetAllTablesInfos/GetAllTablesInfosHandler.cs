@@ -1,8 +1,9 @@
-﻿using MlServer.Database.Repository;
+﻿using System.Text.Json;
+using MlServer.Database.Repository;
 
 using ContractDb = MlServer.Contracts.Models.Db;
 
-namespace MlServer.Application.Handlers.Handlers.GetAllTablesInfos;
+namespace MlServer.Application.Handlers;
 
 public class GetAllTablesInfosHandler
 {
@@ -15,7 +16,18 @@ public class GetAllTablesInfosHandler
 
     public async Task<List<ContractDb.TableInfo>> GetAllTablesInfos()
     {
-        return await _repository.GetAllTablesInfos();
+        var tables = await _repository.GetAllTablesInfos();
+
+        foreach (var table in tables)
+        {
+            var columnNames = JsonSerializer.Deserialize<List<string>>
+                (table.ColumnNamesInJson);
+            columnNames = columnNames?.Where(item => item.Length != 0).ToList();
+
+            table.ColumnNamesInJson = JsonSerializer.Serialize(columnNames);
+        }
+
+        return tables;
     }
     
 }

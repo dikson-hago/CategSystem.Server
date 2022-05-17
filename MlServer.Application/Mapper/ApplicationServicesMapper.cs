@@ -1,6 +1,6 @@
 ﻿using ContractML = MlServer.Contracts.Models.ML;
 
-namespace MlServer.Application.Handlers.Mapper;
+namespace MlServer.Application.Handlers;
 
 public static class ApplicationServicesMapper
 {
