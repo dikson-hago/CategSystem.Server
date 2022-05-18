@@ -17,6 +17,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{35E12AD4-FCF3-4084-912A-D74FB0C4365B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
 Global
