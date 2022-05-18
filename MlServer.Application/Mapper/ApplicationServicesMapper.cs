@@ -1,4 +1,5 @@
-﻿using ContractML = MlServer.Contracts.Models.ML;
+﻿using MlServer.Contracts;
+using ContractML = MlServer.Contracts.Models.ML;
 
 namespace MlServer.Application.Handlers;
 
@@ -15,9 +16,12 @@ public static class ApplicationServicesMapper
                 string value = "";
                 if (prop.GetValue(objectCategory) is not null)
                 {
-                    value = prop.GetValue(objectCategory).ToString();
+                    if (prop.GetValue(objectCategory) != EmptyItem.Value)
+                    {
+                        value = prop.GetValue(objectCategory).ToString();
+                        result.Add(value);
+                    }
                 }
-                result.Add(value);
             }
         }
 

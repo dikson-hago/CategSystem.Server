@@ -1,4 +1,5 @@
-﻿using ContractMl = MlServer.Contracts.Models.ML;
+﻿using MlServer.Contracts;
+using ContractMl = MlServer.Contracts.Models.ML;
 
 namespace MlServer.Orchestrator.Learners.Distriburtors;
 
@@ -16,7 +17,7 @@ public class MlDistributorBase
 
                     if (value is null)
                     {
-                        prop.SetValue(item, "1");
+                        prop.SetValue(item, EmptyItem.Value);
                     }
                 }
             }

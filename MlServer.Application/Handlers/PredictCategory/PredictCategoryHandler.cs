@@ -40,7 +40,6 @@ public class PredictCategoryHandler
             for (int ind = 0; ind < predictions.Count; ind++)
             {
                 var columns = objectInfos[ind].MapToList();
-                columns = columns.GetRange(0, Convert.ToInt32(currentTableColumnsAmount));
                 
                 result.Add(new ContractDb.ObjectInfo()
                 {
